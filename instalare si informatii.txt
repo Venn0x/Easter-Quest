@@ -1,3 +1,5 @@
+NOTA: Atunci cand am facut acest sistem nu stiam de hooking, scz, trb sa bagati functii la toate callback-urile vennoxe fmm
+
 1. In baza de date, la users > SQL introducem : ALTER TABLE `users` ADD `todayquest` INT(2)
 2. Importa fisierul easterquestobjects.sql in baza de date MySQL.
 3. Adauga folderul "easterquest" in Include la compilatorul tau.
