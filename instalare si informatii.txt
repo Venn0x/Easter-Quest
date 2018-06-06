@@ -1,0 +1,16 @@
+1. In baza de date, la users > SQL introducem : ALTER TABLE `users` ADD `todayquest` INT(2)
+2. Importa fisierul easterquestobjects.sql in baza de date MySQL.
+3. Adauga folderul "easterquest" in Include la compilatorul tau.
+4. Adauga "#include <easterquest\main>" la inceputul gamemode-ului, dupa a_samp si a_mysql
+5. Adauga "#include <easterquest\end>" la sfarsitul gamemode-ului.
+6. Adauga "LoadEasterObjects();" la OnGamemodeInit(), dupa conectarea la MySQL.
+7. Adauga "PlayerEasterQuestToday[playerid] = cache_get_field_content_int(0, "todayquest");" la OnPlayerLogin, la colectarea datelor din DB.
+8. Adauga ResetEasterVars(playerid); la OnPlayerConnect, sa sfarsit
+9. Adauga CheckEggRange(playerid, newkeys); la OnPlayerKeyStateChange, de preferat la inceput.
+10. Adauga SprayClickCheck(playerid, clickedid); la OnPlayerClickTextDraw, de preferat la inceput.
+11. HidePlayerSprayTextdraws(playerid); la OnPlayerSpawn
+
+Comenzi: 
+/startquest - Incepe un nou quest 
+/addeasterobject - Adauga un ou in baza de date (Trebuie restart) 
+/buyspraycan - Cumpara un spraycan din 24/7
