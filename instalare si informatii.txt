@@ -2,7 +2,7 @@ NOTA: Atunci cand am facut acest sistem nu stiam de hooking, scz, trb sa bagati 
 
 1. In baza de date, la users > SQL introducem : ALTER TABLE `users` ADD `todayquest` INT(2)
 2. Importa fisierul easterquestobjects.sql in baza de date MySQL.
-3. Adauga folderul "easterquest" in Include la compilatorul tau.
+3. Adauga fisierele easterquest_main.inc si easterquest_end.inc in Include la compilatorul tau.
 4. Adauga "#include <easterquest\main>" la inceputul gamemode-ului, dupa a_samp si a_mysql
 5. Adauga "#include <easterquest\end>" la sfarsitul gamemode-ului.
 6. Adauga "LoadEasterObjects();" la OnGamemodeInit(), dupa conectarea la MySQL.
